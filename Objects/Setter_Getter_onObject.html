@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Creating a JavaScript Object.</p>
+
+<p id="demo"></p>
+
+<script>
+
+var d = Date.prototype;
+Object.defineProperty(d, 'year', {
+  get: function() { return this.getFullYear(); },
+  set: function(y) { this.setFullYear(y); }
+});
+
+var now = new Date();
+console.log(now.year); // 2000
+now.year = 2001; // 987617605170
+console.log(now);
+// Wed Apr 18 11:13:25 GMT-0700 (Pacific Daylight Time) 2001
+
+
+</script>
+</body>
+</html>

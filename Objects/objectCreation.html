@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Creating a JavaScript Object.</p>
+
+<p id="demo"></p>
+
+<script>
+//In javascript objects created in Three diffrent ways.
+// 1.using object literal.
+// 2.using Constrauctor Function
+// 3.using Object.Create() method.
+
+//Craeting Object using Object Literal
+var car = {type:"Fiat", model:"500", color:"white"};
+
+//using constructor function
+var person =  function(firstname,lastname){
+	this.firstname = firstname;
+	this.lastname = lastname;
+	this.printfullname = function (argument) {
+		// body...
+		console.log(this.firstname+" "+this.lastname);
+	}
+}
+
+var newperson = person('Mohammad','rafee')
+
+//using Object.craete method
+var testobject =  Object.Create(null);   //No prototype for this object
+var testobject2 = Object.Create(person.prototype); // for this object person.prototype is base object
+
+
+console.log(car)//This will set the Prototype to object prototype
+
+document.getElementById("demo").innerHTML = car.type;
+</script>
+
+</body>
+</html>
