@@ -1,5 +1,9 @@
 /*JavaScript’s Apply and Call Methods
-The Apply and Call methods are two of the most often used Function methods in JavaScript, and for good reason: they allow us to borrow functions and set the this value in function invocation. In addition, the apply function in particular allows us to execute a function with an array of parameters, such that each parameter is passed to the function individually when the function executes—great for variadic functions; a variadic function takes varying number of arguments, not a set number of arguments as most functions do.
+The Apply and Call methods are two of the most often used Function methods in JavaScript, 
+and for good reason: they allow us to borrow functions and set the this value in function invocation. 
+In addition, the apply function in particular allows us to execute a function with an array of parameters, 
+such that each parameter is passed to the function individually when the function executes—great for variadic functions; 
+a variadic function takes varying number of arguments, not a set number of arguments as most functions do.
 
 ******************************************************************************************
 1.JavaScript’s Apply and Call Methods
